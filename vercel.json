@@ -1,7 +1,16 @@
 {
   "version": 2,
   "framework": "astro",
-  "buildCommand": "bun run build",
-  "devCommand": "bun run dev",
-  "installCommand": "bun install"
+  "buildCommand": "astro build",
+  "devCommand": "astro dev",
+  "installCommand": "bun install",
+  "functions": {
+    "_render": {
+      "runtime": "nodejs20.x"
+    },
+    
+    "_isr": {
+      "runtime": "nodejs20.x"
+    }
+  }
 }
